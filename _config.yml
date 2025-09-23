@@ -1,7 +1,7 @@
 # Site settings
-title: EPFL's NLP Lab
+title: Center of Decentralized Trust Computing
 email:
-description: The NLP (Natural Language Processing) lab is a research group in the School of Computer and Communication Sciences at EPFL in Lausanne, Switzerland! We're a fun and passionate group, with fairly broad research interests, but mainly researching models that can understand and generate languages as well as represent knowledge and reason!
+description: The Center of Decentralized Trust Computing (DTC lab) is in the Department of Computer Science at City University of Hong Kong, focusing on data privacy, blockchain, distributed systems, networking, cloud computing, and mobile computing research.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 

@@ -1,6 +1,6 @@
-# NLP lab's website!
+# DTC lab's website!
 
-This website is built on Jekyll. To run locally, inside the `epfl-nlp.github.io` folder, run `bundle exec jekyll serve`.
+This website is built on Jekyll. To run locally, inside the `cityu-cs-dtc.github.io` folder, run `bundle exec jekyll serve`.
 
 ## Jekyll Theme
 
