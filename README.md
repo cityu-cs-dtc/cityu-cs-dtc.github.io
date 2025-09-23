@@ -1,30 +1,16 @@
-<h1 align="center">Lab Website Template</h1>
-<p align="center">
-<img height="200" src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/images/share.jpg?raw=true" alt="Lab Website Template">
-</p>
+# Stanford People, AI & Robots Website
 
-Lab Website Template (LWT) is an easy-to-use, flexible website template for labs.
-Spend less time worrying about managing a website and citations, and more time running your lab.
+This repo contains the Jekyll files for the [Stanford People, AI & Robots (PAIR) Group website](https://pair.stanford.edu). Please submit pull requests when updating the website.
 
-👇👇 **Get Started** 👇👇
+To locally build and browse, just [install Jekyll](https://jekyllrb.com/docs/installation/) and run ./serve_jekyll in terminal, then go to appropriate url in browser based on what you see in terminal.
 
-[**Documentation**](https://greene-lab.gitbook.io/lab-website-template-docs)
+To compile site for release, exec following in  terminal:
+1. `export JEKYLL_ENV=production`
+2. `bundle exec jekyll clean`
+3. `bundle exec jekyll build --future`
 
-## Key Features
+To update site, run above commands, then 'octopress deploy' (or checkout static, copy contents of _site into root of repo, and commit everything), and then cd to dir where site is hosted (/afs/.cs/group/pair/www)  (you can ssh throught capri13) and just run 'git pull' (this is just the steps getting compiled html, syncing it to master branch, and then pulling master branch at the appropriate location).
 
-- 🤖 Based on Git, GitHub, and Jekyll.
-- 📜 Automatically generated citations from simple identifiers (DOI, PubMed, ORCID, and many more) using Manubot. E.g. `doi:1234/5678` -> `title`, `authors`, `publisher`, `date`, etc.
-- 🧱 A comprehensive and flexible suite of pre-made components (building blocks) for structuring and styling your website:
-  - Formatted tables, code blocks, figures, and other basic elements.
-  - Citations with thumbnails and other rich details.
-  - List large sets of data with flexible filters and components.
-  - ...many more
-- 👁️ Automatic pull request previews.
-- ⚙️ Easy and automated configuration.
-- 👥 Team member pages with bios, roles, and social media links.
-- 🖋️ Blog posts with tags and rich content.
-- 📱 Works and looks good on desktop and mobile.
-- 🤝 Great documentation and support (if we do say so ourselves).
-- ... and much more!
+To add new publications, follow examples in publications directory. To update people or robot list, update appropriate file in \_data. To update look or layout, edit the appropriate md files in \_includes, or \_pages. To update news or publications on home page, edit the index.md in root folder directly.
 
-![GitHub last commit](https://img.shields.io/github/last-commit/greenelab/lab-website-template)
+Maintainers: [Yuke Zhu](https://web.stanford.edu/~yukez/), [Ajay Mandlekar](http://web.stanford.edu/~amandlek/), [Andrey Kurenkov](http://www.andreykurenkov.com/)

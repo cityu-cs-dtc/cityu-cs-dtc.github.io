@@ -1,59 +1,42 @@
-{% assign image = page.header | default: site.header %}
-{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
+<!-- Header Carousel -->
+<header id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign logo = svg | default: png | default: jpg | default: nil %}
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="fill" style="background-image:url('./img/jumbotron/hh.jpg');"></div>
+          <div class="carousel-caption">
+              <font style="font-size: 54px; line-height: 40px;">Stanford People, AI & Robots Group</font><br/>
+              <font style="font-size: 20px; line-height: 40px;">Improving hand hygiene with computer vision at Lucile Packard Children's Hospital</font>
+          </div>
+      </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('./img/jumbotron/thermal.png');"></div>
+            <div class="carousel-caption">
+              <font style="font-size: 54px; line-height: 40px;">Stanford People, AI & Robots Group</font><br/>
+              <font style="font-size: 20px; line-height: 40px;">Automatically detecting falls with thermal cameras</font>
+            </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('./img/jumbotron/phone.png');"></div>
+            <div class="carousel-caption">
+              <font style="font-size: 54px; line-height: 40px;">Stanford People, AI & Robots Group</font><br/>
+              <font style="font-size: 20px; line-height: 40px;">Analysis of phone-based conversational agents on health and violence reveals new insights</font>
+            </div>
+        </div>
+    </div>
 
-<header
-  class="background"
-  style="--image: url('{{ image | relative_url | uri_escape }}')"
-  {% if dark == true or dark == false %}
-    data-dark="{{ dark }}"
-  {% endif %}
-  {% if page.url == "/" %}
-    data-big
-  {% endif %}
->
-  <a href="{{ "/" | relative_url }}" class="home">
-    {% if logo %}
-      <span class="logo">
-        {% if svg %}
-          {{ svg | file_read }}
-        {% else %}
-          <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
-        {% endif %}
-      </span>
-    {% endif %}
-    {% if site.logo-text != false %}
-      <span class="title-text" data-tooltip="Home">
-        {% if site.title and site.show-title != false %}
-          <span class="title">{{ site.title }}</span>
-        {% endif %}
-        {% if site.subtitle and site.show-subtitle != false %}
-          <span class="subtitle">{{ site.subtitle }}</span>
-        {% endif %}
-      </span>
-    {% endif %}
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
-      | sort: "nav.order"
-    %}
-    {% for page in pages %}
-      {% if page.nav %}
-        <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
-        >
-          {{ page.title }}
-        </a>
-      {% endif %}
-    {% endfor %}
-  </nav>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
 </header>
