@@ -1,63 +1,88 @@
 <section id="team">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Our team</h2>
-                <hr class="primary">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Our Team</h2>
+        <hr class="primary">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    {% assign sorted_team = site.data.team | sort: "last_name" %}
+    {% assign advisor_roles = "Professor,Research Assistant Professor,Assistant Professor,Chair Professor" | split: "," %}
+
+    <!-- Advisors -->
+    <h2 class="section-heading">Advisors</h2>
+    <div class="row">
+      {% for member in sorted_team %}
+        {% unless member.is_alumni %}
+          {% if advisor_roles contains member.role %}
+            {% include components/member.html member=member %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
     </div>
 
-    <div class="container">
-        {% assign sorted_team = site.data.team | sort: "last_name" %}
-        <div class="row">
-            {% for member in sorted_team %}
-                {% unless member.is_alumni %}
-                    {% if member.role != 'Master student' %}
-                        {% if member.role != 'Research intern' %}
-                            {% include components/member.html 
-                                member = member
-                            %}
-                        {% endif %}
-                    {% endif %}
-                {% endunless %}
-            {% endfor %}
-        </div>
-        <h2 class="section-heading">Research interns</h2>
-        <div class="row">
-            {% for member in sorted_team %}
-                {% unless member.is_alumni %}
-                    {% if member.role == 'Research intern' %}
-                        {% include components/member.html 
-                            member = member
-                        %}
-                    {% endif %}
-                {% endunless %}
-            {% endfor %}
-        </div>  
-        <h2 class="section-heading">Master students</h2>
-        <div class="row">
-            {% for member in sorted_team %}
-                {% unless member.is_alumni %}
-                    {% if member.role == 'Master student' %}
-                        {% include components/member.html 
-                            member = member
-                        %}
-                    {% endif %}
-                {% endunless %}
-            {% endfor %}
-        </div>  
-
-        <br/>
-        <div class="row alumni">
-            <strong>Alumni:</strong>
-            <ul>
-            {% for member in sorted_team %}
-                {% if member.is_alumni %}
-                    <li>{{member.first_name}} {{member.last_name}} <em>({{member.role}})</em></li>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
+    <!-- Postdocs -->
+    <h2 class="section-heading">Postdocs</h2>
+    <div class="row">
+      {% for member in sorted_team %}
+        {% unless member.is_alumni %}
+          {% if member.role == 'Postdoc' %}
+            {% include components/member.html member=member %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
     </div>
+
+    <!-- PhD Students -->
+    <h2 class="section-heading">PhD Students</h2>
+    <div class="row">
+      {% for member in sorted_team %}
+        {% unless member.is_alumni %}
+          {% if member.role == 'PhD student' %}
+            {% include components/member.html member=member %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+
+    <!-- Research Interns -->
+    <h2 class="section-heading">Research Interns</h2>
+    <div class="row">
+      {% for member in sorted_team %}
+        {% unless member.is_alumni %}
+          {% if member.role == 'Research intern' %}
+            {% include components/member.html member=member %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+
+    <!-- Master Students -->
+    <h2 class="section-heading">Master Students</h2>
+    <div class="row">
+      {% for member in sorted_team %}
+        {% unless member.is_alumni %}
+          {% if member.role == 'Master student' %}
+            {% include components/member.html member=member %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+
+    <!-- Alumni -->
+    <br/>
+    <div class="row alumni">
+      <strong>Alumni:</strong>
+      <ul>
+        {% for member in sorted_team %}
+          {% if member.is_alumni %}
+            <li>{{member.first_name}} {{member.last_name}} <em>({{member.role}})</em></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>
