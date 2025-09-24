@@ -10,30 +10,32 @@
 
   <div class="container">
     {% assign sorted_team = site.data.team | sort: "last_name" %}
-    {% assign advisor_roles = "Professor,Research Assistant Professor,Assistant Professor,Chair Professor" | split: "," %}
+    {% assign advisor_roles = "Professor,Assistant Professor,Chair Professor" | split: "," %}
+    {% assign research_roles = "Research Assistant Professor,Postdoc" | split: "," %}
 
     <!-- Advisors -->
     <h2 class="section-heading">Advisors</h2>
     <div class="row">
-      {% for member in sorted_team %}
+        {% for member in sorted_team %}
         {% unless member.is_alumni %}
-          {% if advisor_roles contains member.role %}
+            {% if advisor_roles contains member.role %}
             {% include components/member.html member=member %}
-          {% endif %}
+            {% endif %}
         {% endunless %}
-      {% endfor %}
+        {% endfor %}
     </div>
 
-    <!-- Postdocs -->
-    <h2 class="section-heading">Postdocs</h2>
+    <!-- Research Staffs -->
+    <h2 class="section-heading">Research Staffs</h2>
     <div class="row">
-      {% for member in sorted_team %}
+        {% for member in sorted_team %}
         {% unless member.is_alumni %}
-          {% if member.role == 'Postdoc' %}
+            {% if research_roles contains member.role %}
             {% include components/member.html member=member %}
-          {% endif %}
+            {% endif %}
         {% endunless %}
-      {% endfor %}
+        {% endfor %}
+    </div>
     </div>
 
     <!-- PhD Students -->
