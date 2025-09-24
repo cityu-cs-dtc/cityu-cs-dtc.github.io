@@ -1,4 +1,75 @@
 <section id="about" class="container">
-  <h1>About Our Lab</h1>
-  <p>这里写实验室的介绍，支持 HTML，也可以嵌套 Bootstrap 的 row/col 做排版。</p>
+  <style>
+    #about {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    #about h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    #about hr {
+      width: 60px;
+      height: 3px;
+      background-color: #AECBFA;
+      border: none;
+      margin: 20px auto;
+    }
+
+    #about .about-content {
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    #about .about-content p {
+      font-size: 1.1em;
+    }
+
+    #about .about-image {
+      max-width: 100%;   /* 让容器可以撑满页面 */
+      margin: 0 auto;
+    }
+
+    #about .about-image img {
+      width: 100%;       /* 图片自适应宽度 */
+      height: auto;      /* 保持比例 */
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: block;
+      margin: 0 auto;
+    }
+
+    #about .about-image .image-caption {
+      background-color: #f2f2f2;
+      padding: 10px 15px;
+      font-size: 0.95em;
+      color: #333;
+      font-style: italic;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 100%;
+    }
+  </style>
+
+  <div class="about-content">
+    <h1>About Our Lab</h1>
+    <hr>
+    <p>
+      <strong>
+        Welcome to our laboratory! Beyond research, our lab is also a vibrant community where 
+        collaboration, creativity, and shared values make us stronger as a team.
+      </strong>
+    </p>
+  </div>
+
+  <!-- 实验室相关图片 -->
+  <div class="about-image">
+    <img src="resources/img/about/picture_20250910.jpg" alt="CDTC Team Photo">
+    <div class="image-caption">
+      Team photo in front of the <strong>Center of Decentralized Trust Computing (CDTC)</strong>, 
+      taken on September 10, 2025.
+    </div>
+  </div>
 </section>
