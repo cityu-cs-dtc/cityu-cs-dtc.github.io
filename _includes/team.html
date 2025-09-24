@@ -74,16 +74,13 @@
     </div>
 
     <!-- Alumni -->
-    <br/>
+    <h2 class="section-heading">Alumni</h2>
     <div class="row alumni">
-      <strong>Alumni:</strong>
-      <ul>
-        {% for member in sorted_team %}
-          {% if member.is_alumni %}
-            <li>{{member.first_name}} {{member.last_name}} <em>({{member.role}})</em></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      {% for member in sorted_team %}
+        {% if member.is_alumni %}
+          {% include components/member.html member=member %}
+        {% endif %}
+      {% endfor %}
     </div>
-  </div>
+
 </section>

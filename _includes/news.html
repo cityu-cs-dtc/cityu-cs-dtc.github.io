@@ -1,0 +1,128 @@
+<!-- Latest News Section -->
+<section id="latest-news" style="padding:60px 0;">
+  <!-- 标题区 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Latest News</h2>
+        <hr class="primary">
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper" style="max-width:80%; margin:auto;">
+    <div class="swiper-wrapper">
+      {% for item in site.data.news %}
+      <div class="swiper-slide">
+        <div class="row align-items-center">
+
+          <!-- 图片 (7/10) -->
+          <div class="col-md-7 text-center mb-4 mb-md-0">
+            <img src="resources/img/news/{{ item.img }}" alt="{{ item.title }}"
+              style="width:100%; height:auto; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+          </div>
+
+          <!-- 文字 (3/10) -->
+          <div class="col-md-5 d-flex flex-column justify-content-center">
+            <h3 style="margin-bottom:20px; font-size:2.4rem; font-weight:700;">
+              {{ item.title }}
+            </h3>
+            <p style="font-size:1.8rem; line-height:2.2; margin-bottom:20px;">
+              {{ item.summary }}
+            </p>
+            <small style="opacity:0.85; font-size:1.4rem; display:block; margin-bottom:15px;">
+              {{ item.time }} · {{ item.source }}
+            </small>
+
+          {% if item.link %}
+            <a href="{{ item.link }}" target="_blank" class="colorBtn btn btn-primary" style="padding:10px 20px; font-size:1.6rem; border-radius:8px; background:linear-gradient(135deg,#3B82F6,#2563EB); border:none; color:#fff; cursor:pointer; font-weight:bold; box-shadow:0 4px 6px rgba(0,0,0,0.1); transition:all 0.3s ease-in-out;">
+              More Info
+            </a>
+          {% endif %}
+          </div>
+
+
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Swiper 控件 -->
+    <div class="swiper-pagination" style="margin-top:20px;"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<style>
+  /* 保持 Swiper 默认箭头 */
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 32px;
+    /* 箭头大小再大一点 */
+    color: #444;
+    /* 深灰，保证可见 */
+  }
+
+  /* 箭头位置调整 */
+  .swiper-button-prev {
+    left: -40px;
+    /* 向容器外移，避免覆盖图片/文字 */
+  }
+
+  .swiper-button-next {
+    right: -40px;
+    /* 向容器外移 */
+  }
+
+
+  /* 分页小圆点放在图片下方 */
+  .swiper-pagination {
+    position: relative !important;
+    /* 改成相对定位 */
+    margin-top: 20px;
+    /* 与内容保持间距 */
+    text-align: center;
+    /* 居中 */
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".colorBtn");
+    const colors = ["#3B82F6","#10B981","#F97316","#EF4444","#8B5CF6","#EC4899"];
+
+    buttons.forEach(btn => {
+      btn.addEventListener("mouseenter", () => {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        btn.style.background = randomColor;
+      });
+      btn.addEventListener("mouseleave", () => {
+        btn.style.background = "linear-gradient(135deg,#3B82F6,#2563EB)";
+      });
+    });
+  });
+</script>

@@ -9,6 +9,7 @@
   google_scholar: https://scholar.google.com/citations?user=L5iEhq0AAAAJ&hl=en
   semantic_scholar: https://www.semanticscholar.org/author/Xiaohua-Jia/2152322296
   github: https://github.com/cityu-cs-dtc
+  email: csjia@cityu.edu.hk
 
 
 
@@ -22,6 +23,7 @@
   google_scholar: https://scholar.google.com/citations?hl=zh-CN&user=HXO3K0AAAAAJ
   semantic_scholar: 
   github: https://github.com/YezzizzeY
+  email: mingzliu5-c@my.cityu.edu.hk
 
 
 - first_name: Pan
@@ -34,6 +36,7 @@
   google_scholar: https://scholar.google.com/citations?user=YO6jOZYAAAAJ&hl=zh-CN&oi=ao
   semantic_scholar: https://www.semanticscholar.org/author/Wenbo-Pan/2213932237
   github: github.com/wbopan
+  email: pan@wenbo.io
 
 - first_name: Ming
   last_name: Yulong
@@ -45,6 +48,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Wang
   last_name: Mingyue
@@ -56,6 +60,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: He
   last_name: Jeff
@@ -67,6 +72,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Xu
   last_name: Jie
@@ -75,9 +81,10 @@
   is_alumni: 
   website: https://jessecu2024.github.io
   twitter: 
-  google_scholar: 
+  google_scholar: https://scholar.google.com.hk/citations?hl=zh-CN&user=4c5XkFIAAAAJ
   semantic_scholar:
-  github: 
+  github: https://github.com/jessecu2024
+  email: jiexu49@cityu.edu.hk
 
 
 
@@ -91,6 +98,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Chen
   last_name: Zhuozhi
@@ -102,6 +110,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: 
   last_name: Elric
@@ -113,6 +122,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Wang
   last_name: Xianlong
@@ -124,6 +134,7 @@
   google_scholar: 
   semantic_scholar:
   github: https://github.com/wxldragon
+  email: xianlong.wang@my.cityu.edu.hk
 
 - first_name: Wang
   last_name: Haodi
@@ -135,17 +146,20 @@
   google_scholar: 
   semantic_scholar: 
   github: https://github.com/LiraWang
+  email: haodwang@cityu.edu.hk
 
-- first_name: cityu3
-  last_name: 
+- first_name: Peng
+  last_name: Sen
   role: PhD student
   img: student.jpg
-  is_alumni: 
+  is_alumni: Yes
   website: 
   twitter: 
   google_scholar: 
   semantic_scholar:
   github: 
+  latest: Assistant Professor at XYZ University
+  email: 
 
 - first_name: Wang
   last_name: Guan
@@ -157,6 +171,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Zhao
   last_name: Zhezhi
@@ -168,6 +183,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Cui
   last_name: Rui
@@ -179,6 +195,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Zhuang
   last_name: Jiazhen
@@ -190,6 +207,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Shi
   last_name: Long
@@ -201,6 +219,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Wu
   last_name: Honghong
@@ -212,17 +231,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
-
-- first_name: i í
-  last_name: 
-  role: PhD student
-  img: student.jpg
-  is_alumni: 
-  website: 
-  twitter: 
-  google_scholar: 
-  semantic_scholar:
-  github: 
+  email: 
 
 - first_name: 
   last_name: Twinkle
@@ -234,6 +243,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Bian
   last_name: Long
@@ -245,6 +255,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Wang
   last_name: Yuan
@@ -256,6 +267,7 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
 
 - first_name: Liu
   last_name: Jiawei
@@ -267,3 +279,447 @@
   google_scholar: 
   semantic_scholar:
   github: 
+  email: 
+  latest: 
+
+- first_name: Cheng
+  last_name: Wilson
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: UQ
+
+- first_name: Xiao
+  last_name: Jitian
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: USQ
+
+- first_name: Huang
+  last_name: Chuanhe
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Li
+  last_name: Deying
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: RenminU
+
+- first_name: Huang
+  last_name: Hejiao
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: HIT-SZ
+
+- first_name: Wu
+  last_name: Huayi
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Liu
+  last_name: Hai
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: HangsengU
+
+- first_name: Fan
+  last_name: Jianxi
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: SuzhouU
+
+- first_name: Cheng
+  last_name: Hongju
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: FuzhouU
+
+- first_name: Liu
+  last_name: Qin
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Zeng
+  last_name: Yuanyuan
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Du
+  last_name: Hongwei
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: HIT-SZ
+
+- first_name: Luo
+  last_name: Hongbo
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: CityU
+
+- first_name: Zhang
+  last_name: Wentao
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Liu
+  last_name: Dandan
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Xu
+  last_name: Zeng
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Liu
+  last_name: Xinxin
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Wuhan
+  
+- first_name: Zhou
+  last_name: Kunxiao
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: DongGuangU
+
+- first_name: Wong
+  last_name: Gary
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: HKU
+
+- first_name: Chang
+  last_name: Yanan
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Central-China U
+
+- first_name: Yang
+  last_name: Kan
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Memphis U
+
+- first_name: Zhang
+  last_name: Bo
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Google Zurich
+
+- first_name: Xie
+  last_name: Ruitao
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: ShenZhenU
+
+- first_name: Tang
+  last_name: Xin
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU-CityU
+
+- first_name: Li
+  last_name: Peng
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Wang
+  last_name: Jinhai
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: DongGuangU
+
+- first_name: Wu
+  last_name: Di
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: WuhanU
+
+- first_name: Cheng
+  last_name: Yingying
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Huawei
+
+- first_name: Shu
+  last_name: Jiangang
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: PengCheng Lab
+
+- first_name: Guo
+  last_name: Yu
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Beijing Normal U
+
+- first_name: Umair
+  last_name: Zuneera
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Shuren College, HK
+
+- first_name: Yu
+  last_name: Nuo
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: Anhui Inst of Tech
+
+- first_name: Qiu
+  last_name: Zhenyu
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: NUDT, Changsha
+
+- first_name: Zhang
+  last_name: Chen
+  role: 
+  img: student.jpg
+  is_alumni: Yes
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+  latest: HangsengU
