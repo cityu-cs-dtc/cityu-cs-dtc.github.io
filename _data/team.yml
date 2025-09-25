@@ -100,17 +100,17 @@
   github: 
   email: 
 
-- first_name: Chen
-  last_name: Ciyuan
-  role: PhD student
+- first_name: Ciyuan
+  last_name: Chen
+  role:  PhD student
   img: ciyuan.jpg
-  is_alumni: 
-  website: 
+  is_alumni: no
+  website: https://dblp.org/pid/294/2091.html
   twitter: 
   google_scholar: 
   semantic_scholar:
   github: 
-  email: 
+  email: ciyuachen2-c@my.cityu.edu.hk
 
 - first_name: Zhuang
   last_name: Hongbin
