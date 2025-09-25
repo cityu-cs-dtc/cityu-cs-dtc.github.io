@@ -78,36 +78,52 @@
 </script>
 
 <style>
-  /* 保持 Swiper 默认箭头 */
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 32px;
-    /* 箭头大小再大一点 */
-    color: #444;
-    /* 深灰，保证可见 */
-  }
+/* 自定义可爱左右箭头 */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 24px;       /* 小一点的箭头 */
+  font-weight: bold;
+  color: #b7e2dc;           /* 箭头颜色 */
+  content: '';           /* 我们改用背景圆形+伪内容 */
+}
 
-  /* 箭头位置调整 */
-  .swiper-button-prev {
-    left: -40px;
-    /* 向容器外移，避免覆盖图片/文字 */
-  }
+/* 给箭头加一个圆圆的背景 */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;      /* 圆形 */
+  background: #c9daec;     /* 浅粉色，萌系 */
+  box-shadow: 0 3px 6px rgba(172, 223, 226, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
 
-  .swiper-button-next {
-    right: -40px;
-    /* 向容器外移 */
-  }
+/* 左箭头符号 */
+.swiper-button-prev::before {
+  content: '‹';
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
 
+/* 右箭头符号 */
+.swiper-button-next::before {
+  content: '›';
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
 
-  /* 分页小圆点放在图片下方 */
-  .swiper-pagination {
-    position: relative !important;
-    /* 改成相对定位 */
-    margin-top: 20px;
-    /* 与内容保持间距 */
-    text-align: center;
-    /* 居中 */
-  }
+/* 悬停时的可爱交互 */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ebadbd;   /* 深一点的粉色 */
+  transform: scale(1.1); /* 鼠标经过轻轻放大 */
+}
+
 </style>
 
 <script>
