@@ -54,7 +54,7 @@
     <div class="row">
       {% for member in sorted_team %}
         {% unless member.is_alumni %}
-          {% if member.role == 'Research intern' %}
+          {% if member.role == 'Research intern' or member.role == 'Research Assistant' %}
             {% include components/member.html member=member %}
           {% endif %}
         {% endunless %}

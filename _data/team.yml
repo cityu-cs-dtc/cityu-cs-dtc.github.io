@@ -112,9 +112,9 @@
   github: 
   email: 
 
-- first_name: 
-  last_name: Elric
-  role: PhD student
+- first_name: Zhuang
+  last_name: Hongbin
+  role: Postdoc
   img: student.jpg
   is_alumni: 
   website: 
@@ -222,8 +222,8 @@
   email: 
 
 - first_name: Wu
-  last_name: Honghong
-  role: PhD student
+  last_name: Shihong
+  role: Research Assistant
   img: student.jpg
   is_alumni: 
   website: 
