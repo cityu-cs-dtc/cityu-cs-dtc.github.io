@@ -1,4 +1,4 @@
-# DTC lab's website!
+# Prof. Jia' Lab's website!
 
 This website is built on Jekyll. To run locally, inside the `cityu-cs-dtc.github.io` folder, run `bundle exec jekyll serve`.
 
