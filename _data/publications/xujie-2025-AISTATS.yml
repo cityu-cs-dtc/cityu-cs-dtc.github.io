@@ -1,0 +1,17 @@
+- title: 'LMEraser: Large Model Unlearning via Adaptive Prompt Tuning'
+  authors:
+  - name: Jie Xu
+    dtc-lab: true
+  - name: Zihan Wu
+  - name: Cong Wang
+  - name: Xiaohua Jia
+  year: 2025
+  journal: AISTATS 2025
+  link: https://arxiv.org/abs/2404.11056
+  code: https://github.com/lmeraser/lmeraser
+  dataset: ''
+  project: ''
+  poster: ''
+  video: ''
+  demo: ''
+  slides: ''

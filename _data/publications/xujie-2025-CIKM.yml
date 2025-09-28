@@ -1,0 +1,18 @@
+- title: 'LiveVal: Real-time and Trajectory-based Data Valuation via Adaptive Reference
+    Points'
+  authors:
+  - name: Jie Xu
+    dtc-lab: true
+  - name: Zihan Wu
+  - name: Cong Wang
+  - name: Xiaohua Jia
+  year: 2025
+  journal: CIKM 2025
+  link: https://arxiv.org/abs/2502.10489
+  code: https://github.com/liveval/liveval
+  dataset: ''
+  project: ''
+  poster: ''
+  video: ''
+  demo: ''
+  slides: ''
