@@ -1,40 +1,117 @@
+---
+layout: default
+title: Our Team
+---
+
+<style>
+/* ===== Team Page Custom Styles ===== */
+
+#team {
+  text-align: left;
+}
+
+/* Alumni Section Styling */
+.alumni-list {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+  max-width: 900px;
+}
+
+.alumni-list li {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  font-size: 1.55rem; /* ✅ 字体更大 */
+  color: #1a1a1a;
+  line-height: 1.8em; /* ✅ 行距也稍加宽 */
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* 前面的蓝色圆点修饰 */
+.alumni-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff;
+  font-size: 1.6rem;
+  line-height: 1.3em;
+}
+
+/* hover时轻微放大 & 变蓝 */
+.alumni-list li:hover {
+  color: #0056b3;
+  transform: translateX(4px);
+}
+
+.alumni-name {
+  font-weight: 600;
+  color: #111;
+}
+
+.alumni-role {
+  color: #444;
+  margin-left: 6px;
+}
+
+.alumni-latest {
+  color: #007bff;
+  font-style: italic;
+  margin-left: 6px;
+}
+
+/* Section headers */
+.section-heading {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.6em;
+  color: #222;
+  text-align: left;
+}
+
+hr.primary {
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  border: none;
+  margin: 0 0 25px 0;
+}
+</style>
+
 <section id="team">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Our Team</h2>
-        <hr class="primary">
-      </div>
-    </div>
-  </div>
+  
 
   <div class="container">
     {% assign sorted_team = site.data.team | sort: "last_name" %}
-    {% assign advisor_roles = "Professor,Assistant Professor,Chair Professor" | split: "," %}
+    {% assign advisor_roles = "Professor,Assistant Professor,Chair Professor, IEEE Fellow" | split: "," %}
     {% assign research_roles = "Research Assistant Professor,Postdoc" | split: "," %}
 
-    <!-- Advisors -->
-    <h2 class="section-heading">Advisors</h2>
-    <div class="row">
-        {% for member in sorted_team %}
-        {% unless member.is_alumni %}
-            {% if advisor_roles contains member.role %}
-            {% include components/member.html member=member %}
-            {% endif %}
-        {% endunless %}
-        {% endfor %}
-    </div>
+  <!-- Advisors -->
+  <h2 class="section-heading">Advisor</h2>
+  <div class="row">
+    {% assign allowed_advisor_imgs = "jia.jfif,wangcong.jpg" | split: "," %}
+    {% for member in sorted_team %}
+      {% unless member.is_alumni %}
+        {% assign img_name = member.img | split: "/" | last | downcase | strip %}
+        {% if allowed_advisor_imgs contains img_name %}
+          {% include components/member.html member=member %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </div>
 
     <!-- Research Staffs -->
     <h2 class="section-heading">Research Staffs</h2>
     <div class="row">
-        {% for member in sorted_team %}
+      {% for member in sorted_team %}
         {% unless member.is_alumni %}
-            {% if research_roles contains member.role %}
+          {% if research_roles contains member.role %}
             {% include components/member.html member=member %}
-            {% endif %}
+          {% endif %}
         {% endunless %}
-        {% endfor %}
+      {% endfor %}
     </div>
 
     <!-- PhD Students -->
@@ -49,8 +126,8 @@
       {% endfor %}
     </div>
 
-    <!-- Research Interns -->
-    <h2 class="section-heading">Visting Students/Researchers</h2>
+    <!-- Visiting Students / Researchers -->
+    <h2 class="section-heading">Visiting Students / Researchers</h2>
     <div class="row">
       {% for member in sorted_team %}
         {% unless member.is_alumni %}
@@ -75,12 +152,19 @@
 
     <!-- Alumni -->
     <h2 class="section-heading">Alumni</h2>
-    <div class="row alumni">
+    <ul class="alumni-list">
       {% for member in sorted_team %}
         {% if member.is_alumni %}
-          {% include components/member.html member=member %}
+          <li>
+            <span class="alumni-name">{{ member.first_name }} {{ member.last_name }}</span>
+            <span class="alumni-role">— {{ member.role }}</span>
+            {% if member.latest %}
+              <span class="alumni-latest">(Latest: {{ member.latest }})</span>
+            {% endif %}
+          </li>
         {% endif %}
       {% endfor %}
-    </div>
+    </ul>
 
+  </div>
 </section>

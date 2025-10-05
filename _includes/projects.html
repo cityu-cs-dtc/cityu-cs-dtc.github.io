@@ -1,0 +1,322 @@
+<section id="research-projects" class="no-padding">
+
+  <style>
+    h2.section-heading {
+      font-weight: 700;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    hr.primary {
+      border-color: #007bff;
+      border-width: 3px;
+      width: 60px;
+      margin: 20px auto;
+    }
+
+    /* === Research Interests Intro Section === */
+    #research-intro {
+    margin: 100px auto; /* 上下60px留白，左右自动居中 */
+    }
+
+    #research-intro .research-icons {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 24px;
+      overflow-x: auto;
+      padding: 10px 5px;
+      -webkit-overflow-scrolling: touch;
+      justify-content: center;
+    }
+
+    #research-intro .icon-item {
+      flex: 0 0 calc((100% - 5*24px)/6);
+      text-align: center;
+      min-width: 140px;
+
+    }
+
+    #research-intro .icon-item img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 8px;
+    }
+
+    #research-intro .icon-title {
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    #research-intro .icon-tags {
+      font-size: 12px;
+      color: #6c757d;
+    }
+
+    @media (min-width: 1200px) {
+      #research-intro .icon-item img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      #research-intro .icon-item {
+        flex: 0 0 160px;
+      }
+    }
+
+    /* === Projects Section === */
+    .portfolio-box {
+      position: relative;
+      margin-bottom: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .portfolio-box:hover {
+      transform: translateY(-3px);
+    }
+
+    .portfolio-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .portfolio-box-text {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .portfolio-box-text h4 {
+      font-weight: 600;
+    }
+
+    .portfolio-box-text h5 {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    .portfolio-box-text p {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.5;
+      margin-top: 10px;
+    }
+
+    /* Center the project row on any screen size */
+    #research-projects .row.no-gutter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* ✅ center horizontally */
+    }
+
+    #research-projects .col-lg-6 {
+      max-width: 600px;
+      flex: 0 0 50%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 991px) {
+      #research-projects .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 700px;
+      }
+    }
+  </style>
+  
+  <!-- === Introduction Section === -->
+  <div id="research-intro" class="container text-center" style="margin-bottom: 60px;">
+    <h2 class="section-heading">Research Interests</h2>
+    <hr class="primary">
+    <p class="lead text-muted text-center mb-5">
+      We advance trustworthy and privacy-preserving systems through research in AI, secure infrastructures, and decentralized computing for reliable and ethical real-world impact.
+    </p>
+
+    <div class="research-icons">
+      <div class="icon-item">
+        <img src="resources/img/research_interests/LLM.png" alt="LLM Safety">
+        <div class="icon-title">LLM & GenAI Safety</div>
+        <div class="icon-tags">Alignment · Adversarial · Watermark</div>
+      </div>
+
+      <div class="icon-item">
+        <img src="resources/img/research_interests/data.png" alt="Secure Data Systems">
+        <div class="icon-title">Secure Data Systems</div>
+        <div class="icon-tags">Encryption · Auditing · Deduplication</div>
+      </div>
+
+      <div class="icon-item">
+        <img src="resources/img/research_interests/Image.png" alt="Multimedia Forensics">
+        <div class="icon-title">Multimedia Forensics</div>
+        <div class="icon-tags">Splicing · Deep Learning · Transformers</div>
+      </div>
+
+      <div class="icon-item">
+        <img src="resources/img/research_interests/city.png" alt="Edge Computing">
+        <div class="icon-title">Edge & Digital Twin</div>
+        <div class="icon-tags">Fidelity · Latency · Migration</div>
+      </div>
+
+      <div class="icon-item">
+        <img src="resources/img/research_interests/blockchain.png" alt="Blockchain Systems">
+        <div class="icon-title">Blockchain Systems</div>
+        <div class="icon-tags">Scalability · Trust · DeStorage</div>
+      </div>
+
+      <div class="icon-item">
+        <img src="resources/img/research_interests/FL.png" alt="Federated Learning">
+        <div class="icon-title">Federated Learning</div>
+        <div class="icon-tags">Differential Privacy · Secure Computation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Projects Section === -->
+  <div class="container text-center">
+    <h2 class="section-heading">Research Projects</h2>
+    <hr class="primary">
+  </div>
+
+  <div class="container-fluid">
+    <div class="row no-gutter">
+
+      <!-- Project 1 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Build Trust Together">
+          <div class="portfolio-box-text">
+            <h4>3-layer trust building</h4>
+            <h5 class="text-muted">Trustworthy Systems</h5>
+            <p>
+              This project builds robust and explainable infrastructures that align technical reliability with human values — integrating distributed systems, blockchains, AI, and networking to create transparent and ethical platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>      
+
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>       
+
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>      
+      
+      
+
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>      
+      
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>      
+ 
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>     
+  
+      <!-- Project 3 -->
+      <div class="col-lg-6 col-sm-6">
+        <div class="portfolio-box">
+          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Project 2">
+          <div class="portfolio-box-text">
+            <h4>Project Name</h4>
+            <h5 class="text-muted">Category</h5>
+            <p>
+              Description text here. Add your project overview, goals, and outcomes.
+            </p>
+          </div>
+        </div>
+      </div>      
+            
+    </div>
+  </div>
+</section>
