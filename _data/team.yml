@@ -41,7 +41,7 @@
 - first_name: Ming
   last_name: Yulong
   role: PhD student
-  img: student.jpg
+  img: yulong.jpg
   is_alumni: 
   website: myl.moe
   twitter: 
@@ -54,7 +54,7 @@
   last_name: Mingyue
   role: PhD student
   img: student.jpg
-  is_alumni: 
+  is_alumni: yes
   website: 
   twitter: 
   google_scholar: https://scholar.google.com/citations?user=gqL5sZ0AAAAJ
@@ -153,7 +153,7 @@
 - first_name: Cui
   last_name: Lei
   role: PhD student
-  img: student.jpg
+  img: cuilei.jpg
   is_alumni: 
   website: 
   twitter: 
@@ -165,7 +165,7 @@
 - first_name: Li
   last_name: Xiang
   role: PhD student
-  img: student.jpg
+  img: lixiang.jpg
   is_alumni: 
   website: 
   twitter: 
@@ -184,8 +184,31 @@
   google_scholar: 
   semantic_scholar:
   github: 
-  email: wushihong@nudt.edu.cn
+  email: 
 
+- first_name: Yang
+  last_name: Jijia
+  role: Research Assistant
+  img: jijia.jpg
+  is_alumni: 
+  website: 
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
+
+- first_name: Chen
+  last_name: Zizhuo
+  role: Research Assistant
+  img: zizhuo.jpg
+  is_alumni: 
+  website: https://github.com/aliosvictor
+  twitter: 
+  google_scholar: 
+  semantic_scholar:
+  github: 
+  email: 
 
 
 - first_name: Huang
