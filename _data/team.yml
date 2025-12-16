@@ -188,7 +188,7 @@
 
 - first_name: Yang
   last_name: Jijia
-  role: Research Assistant
+  role: PhD student
   img: jijia.jpg
   is_alumni: 
   website: 
@@ -200,7 +200,7 @@
 
 - first_name: Chen
   last_name: Zizhuo
-  role: Research Assistant
+  role: PhD student
   img: zizhuo.jpg
   is_alumni: 
   website: https://github.com/aliosvictor
