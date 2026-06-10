@@ -42,13 +42,13 @@
   last_name: Yulong
   role: PhD student
   img: yulong.jpg
-  is_alumni: 
+  is_alumni:
   website: myl.moe
-  twitter: 
-  google_scholar: 
+  twitter:
+  google_scholar:
   semantic_scholar:
-  github: 
-  email: 
+  github:
+  email: yulonming2-c@my.cityu.edu.hk
 
 - first_name: Wang
   last_name: Mingyue
@@ -154,61 +154,73 @@
   last_name: Lei
   role: PhD student
   img: cuilei.jpg
-  is_alumni: 
-  website: 
-  twitter: 
-  google_scholar: 
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
   semantic_scholar:
-  github: 
-  email: 
+  github:
+  email: leicui9-c@my.cityu.edu.hk
 
 - first_name: Li
   last_name: Xiang
   role: PhD student
   img: lixiang.jpg
-  is_alumni: 
-  website: 
-  twitter: 
-  google_scholar: 
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
   semantic_scholar:
-  github: 
-  email: 
+  github:
+  email: xli2325-c@my.cityu.edu.hk
 
 - first_name: Wu
   last_name: Shihong
   role: Research Assistant
   img: shihong.jpg
-  is_alumni: 
-  website: 
-  twitter: 
-  google_scholar: 
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
   semantic_scholar:
-  github: 
-  email: 
+  github:
+  email: wushihong@nudt.edu.cn
 
 - first_name: Yang
   last_name: Jijia
   role: PhD student
   img: jijia.jpg
-  is_alumni: 
-  website: 
-  twitter: 
-  google_scholar: 
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
   semantic_scholar:
-  github: 
-  email: 
+  github:
+  email: jijiayang2-c@my.cityu.edu.hk
 
 - first_name: Chen
   last_name: Zizhuo
   role: PhD student
   img: zizhuo.jpg
-  is_alumni: 
+  is_alumni:
   website: https://github.com/aliosvictor
-  twitter: 
-  google_scholar: 
+  twitter:
+  google_scholar:
   semantic_scholar:
-  github: 
-  email: 
+  github:
+  email: zizhuchen2-c@my.cityu.edu.hk
+
+- first_name: Liu
+  last_name: Zonglin
+  role: PhD student
+  img: student.jpg
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
+  semantic_scholar:
+  github:
+  email: zongliliu4-c@my.cityu.edu.hk
 
 
 - first_name: Huang
