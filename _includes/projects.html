@@ -16,24 +16,23 @@
 
     /* === Research Interests Intro Section === */
     #research-intro {
-    margin: 100px auto; /* 上下60px留白，左右自动居中 */
+      margin: 100px auto;
     }
 
+    /* wrap (not nowrap+overflow) so the first tile is never clipped on the left */
     #research-intro .research-icons {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       gap: 24px;
-      overflow-x: auto;
       padding: 10px 5px;
-      -webkit-overflow-scrolling: touch;
       justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     #research-intro .icon-item {
-      flex: 0 0 calc((100% - 5*24px)/6);
+      flex: 0 0 150px;
       text-align: center;
-      min-width: 140px;
-
     }
 
     #research-intro .icon-item img {
@@ -62,40 +61,47 @@
       }
     }
 
-    @media (max-width: 991.98px) {
-      #research-intro .icon-item {
-        flex: 0 0 160px;
-      }
-    }
-
     /* === Projects Section === */
     .portfolio-box {
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       background-color: #fff;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.2s ease-in-out;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .portfolio-box:hover {
       transform: translateY(-3px);
     }
 
+    /* uniform image area for every card */
     .portfolio-box img {
       width: 100%;
-      height: auto;
+      height: 210px;
+      object-fit: contain;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
       display: block;
+      padding: 12px;
+      box-sizing: border-box;
     }
 
     .portfolio-box-text {
       background-color: #f8f9fa;
       padding: 20px;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
     }
 
     .portfolio-box-text h4 {
       font-weight: 600;
+      min-height: 44px;
     }
 
     .portfolio-box-text h5 {
@@ -111,33 +117,42 @@
       margin-top: 10px;
     }
 
-    /* Center the project row on any screen size */
-    #research-projects .row.no-gutter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1300px; /* 限制一行最多两个项目 */
-    margin: 0 auto;
+    /* paper link pinned to the bottom so links align across cards */
+    .portfolio-box-text .project-link {
+      margin-top: auto;
+      padding-top: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #007bff;
+      text-decoration: none;
     }
 
-    @media (min-width: 1600px) {
-    #research-projects .row.no-gutter {
-        max-width: 1400px;
-    }
+    .portfolio-box-text .project-link:hover {
+      text-decoration: underline;
     }
 
+    /* Center the project grid; two equal columns per row */
+    #research-projects .row.no-gutter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
     #research-projects .col-lg-6 {
-      max-width: 600px;
       flex: 0 0 50%;
+      max-width: 560px;
       padding: 0 15px;
       box-sizing: border-box;
+      display: flex;
     }
 
     @media (max-width: 991px) {
       #research-projects .col-lg-6 {
         flex: 0 0 100%;
-        max-width: 700px;
+        max-width: 560px;
       }
     }
   </style>
@@ -201,13 +216,14 @@
       <!-- Project 1: LLM Safety & Alignment -->
       <div class="col-lg-6 col-sm-6">
         <div class="portfolio-box">
-          <img src="resources/img/projects/vram.png" class="img-responsive" alt="Knowledge-Aware Refusal in LLMs">
+          <img src="resources/img/projects/refuse.png" class="img-responsive" alt="Knowledge-Aware Refusal in LLMs">
           <div class="portfolio-box-text">
             <h4>Can LLMs Refuse Questions They Don't Know?</h4>
             <h5 class="text-muted">LLM Safety & Alignment</h5>
             <p>
-              We build a benchmark and metrics to measure whether large language models can recognize the limits of their own knowledge and reliably refuse to answer factual questions they cannot know.
+              We introduce the Refusal Index to measure whether large language models can recognize the limits of their own knowledge and reliably refuse to answer factual questions they cannot know.
             </p>
+            <a href="https://arxiv.org/abs/2510.01782" target="_blank" rel="noopener noreferrer" class="project-link">Paper →</a>
           </div>
         </div>
       </div>
@@ -215,13 +231,14 @@
       <!-- Project 2: LLM Agents -->
       <div class="col-lg-6 col-sm-6">
         <div class="portfolio-box">
-          <img src="resources/img/projects/graphs.jpg" class="img-responsive" alt="Memory Harness for LLM Agents">
+          <img src="resources/img/projects/mstar.png" class="img-responsive" alt="Memory Harness for LLM Agents">
           <div class="portfolio-box-text">
             <h4>M★: A Memory Harness for LLM Agents</h4>
             <h5 class="text-muted">LLM Agents</h5>
             <p>
               M★ gives every task its own structured memory harness, letting LLM agents build, retrieve, and reuse task-specific experience for more reliable long-horizon reasoning and tool use.
             </p>
+            <a href="https://arxiv.org/abs/2604.11811" target="_blank" rel="noopener noreferrer" class="project-link">Paper →</a>
           </div>
         </div>
       </div>
@@ -229,13 +246,14 @@
       <!-- Project 3: Unlearning & Data Protection -->
       <div class="col-lg-6 col-sm-6">
         <div class="portfolio-box">
-          <img src="resources/img/projects/unlearn.png" class="img-responsive" alt="Unlearning and Data Protection">
+          <img src="resources/img/projects/dualbranch.png" class="img-responsive" alt="Unlearning and Data Protection">
           <div class="portfolio-box-text">
             <h4>Machine Unlearning & Unlearnable Examples</h4>
             <h5 class="text-muted">Unlearning & Data Protection</h5>
             <p>
               Two complementary lines of data control: LMCleaner removes the influence of specific data from trained models with certification and no full retraining, while our dual-branch unlearnable examples stop unauthorized models from learning useful features in the first place — robust to adversarial training and purification.
             </p>
+            <a href="https://arxiv.org/abs/2605.01718" target="_blank" rel="noopener noreferrer" class="project-link">Paper →</a>
           </div>
         </div>
       </div>
@@ -243,13 +261,14 @@
       <!-- Project 4: Privacy-Preserving AI -->
       <div class="col-lg-6 col-sm-6">
         <div class="portfolio-box">
-          <img src="resources/img/projects/liveVal.png" class="img-responsive" alt="Privacy-Preserving RAG">
+          <img src="resources/img/projects/p2rag.png" class="img-responsive" alt="Privacy-Preserving RAG">
           <div class="portfolio-box-text">
             <h4>P²RAG: Privacy-Preserving RAG</h4>
             <h5 class="text-muted">Privacy-Preserving AI</h5>
             <p>
               P²RAG is an efficient privacy-preserving retrieval-augmented generation service that supports arbitrary top-k retrieval without revealing user queries or the underlying knowledge base.
             </p>
+            <a href="https://arxiv.org/abs/2603.14778" target="_blank" rel="noopener noreferrer" class="project-link">Paper →</a>
           </div>
         </div>
       </div>
@@ -264,6 +283,7 @@
             <p>
               zkNAS lets clients outsource neural architecture search to untrusted servers while cryptographically verifying the result, combining zero-cost proxies with zero-knowledge proofs for efficient, trustworthy automated model design.
             </p>
+            <a href="https://dblp.org/db/conf/dasfaa/dasfaa2026-5.html" target="_blank" rel="noopener noreferrer" class="project-link">Paper →</a>
           </div>
         </div>
       </div>
@@ -271,13 +291,14 @@
       <!-- Project 6: Blockchain Systems -->
       <div class="col-lg-6 col-sm-6">
         <div class="portfolio-box">
-          <img src="resources/img/projects/3layers.png" class="img-responsive" alt="Secure Gas Sponsorship for ERC-4337">
+          <img src="resources/img/projects/gasliteaa.png" class="img-responsive" alt="Secure Gas Sponsorship for ERC-4337">
           <div class="portfolio-box-text">
             <h4>GasLiteAA: Secure Gas Sponsorship for ERC-4337</h4>
             <h5 class="text-muted">Blockchain Systems</h5>
             <p>
               GasLiteAA optimizes ERC-4337 account abstraction to enable efficient and secure gas sponsorship, cutting on-chain overhead to make blockchain transactions cheaper and more user-friendly.
             </p>
+            <a href="https://arxiv.org/abs/2604.10160" target="_blank" rel="noopener noreferrer" class="project-link">Paper →</a>
           </div>
         </div>
       </div>
