@@ -1,0 +1,12 @@
+- title: "MulVul: Retrieval-augmented Multi-Agent Code Vulnerability Detection via Cross-Model Prompt Evolution"
+  authors:
+    - name: Zihan Wu
+    - name: Jie Xu
+      dtc-lab: true
+    - name: Yun Peng
+    - name: Chun Yong Chong
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "Annual Meeting of the Association for Computational Linguistics (ACL 2026)"
+  link: "https://jessecu2024.github.io/publications/"

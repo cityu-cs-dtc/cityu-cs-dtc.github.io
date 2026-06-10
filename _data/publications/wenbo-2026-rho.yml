@@ -1,0 +1,15 @@
+- title: "Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts"
+  authors:
+    - name: Wenbo Pan
+      dtc-lab: true
+    - name: Shujie Liu
+    - name: Chin-Yew Lin
+    - name: Jingying Zeng
+    - name: Xianfeng Tang
+    - name: Xiangyang Zhou
+    - name: Yan Lu
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "arXiv preprint"
+  link: "https://arxiv.org/abs/2606.05922"

@@ -1,0 +1,17 @@
+- title: "Image-to-Video Diffusion: From Foundations to Open Frontiers"
+  authors:
+    - name: Xianlong Wang
+      dtc-lab: true
+    - name: Wenbo Pan
+      dtc-lab: true
+    - name: Shijia Zhou
+    - name: Ke Li
+    - name: Yuqi Wang
+    - name: Zeyu Ye
+    - name: Hangtao Zhang
+    - name: Leo Yu Zhang
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "arXiv preprint"
+  link: "https://arxiv.org/abs/2605.17248"

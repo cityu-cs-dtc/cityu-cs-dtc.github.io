@@ -1,0 +1,16 @@
+- title: "LMCleaner: Efficient and Certified Online Unlearning via Influence Propagation Truncation"
+  authors:
+    - name: Jie Xu
+      dtc-lab: true
+    - name: Zihan Wu
+    - name: Wenbo Pan
+      dtc-lab: true
+    - name: Jiao Yin
+    - name: Yong-Feng Ge
+    - name: Hua Wang
+    - name: Cong Wang
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "International Conference on Machine Learning (ICML 2026)"
+  link: "https://jessecu2024.github.io/publications/"

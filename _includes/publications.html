@@ -25,7 +25,7 @@
       {% for year in (2024..newest_paper_year) reversed %}
         {% if year >= 2024 %}
         <li>
-          <input type="checkbox" checked>
+          <input type="checkbox" {% unless year == newest_paper_year %}checked{% endunless %}>
           <i></i>
           <h3>{{ year }}</h3>
           {% for venue in pub_venues %}

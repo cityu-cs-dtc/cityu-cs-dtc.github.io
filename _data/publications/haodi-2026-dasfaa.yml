@@ -1,0 +1,13 @@
+- title: "zkNAS: Secure and Efficient Outsourced-NAS with Zero-Cost Proxies"
+  authors:
+    - name: Haodi Wang
+      dtc-lab: true
+    - name: Danyang Zhang
+    - name: Tangyu Jiang
+    - name: Danyang Wang
+    - name: Fangda Guo
+    - name: Jing Wang
+    - name: Yu Guo
+  year: 2026
+  journal: "International Conference on Database Systems for Advanced Applications (DASFAA 2026)"
+  link: "https://dblp.org/db/conf/dasfaa/dasfaa2026-5.html"

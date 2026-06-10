@@ -1,0 +1,16 @@
+- title: "Can LLMs Refuse Questions They Do Not Know? Measuring Knowledge-Aware Refusal in Factual Tasks"
+  authors:
+    - name: Wenbo Pan
+      dtc-lab: true
+    - name: Jie Xu
+      dtc-lab: true
+    - name: Qiguang Chen
+    - name: Junhao Dong
+    - name: Libo Qin
+    - name: Xinfeng Li
+    - name: Haining Yu
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "International Conference on Learning Representations (ICLR 2026)"
+  link: "https://jessecu2024.github.io/publications/"

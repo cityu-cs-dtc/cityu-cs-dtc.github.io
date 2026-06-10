@@ -1,0 +1,17 @@
+- title: "P²RAG: Efficient Privacy-Preserving RAG Service Supporting Arbitrary Top-k Retrieval"
+  authors:
+    - name: Yulong Ming
+      dtc-lab: true
+    - name: Mingyue Wang
+      dtc-lab: true
+    - name: Jijia Yang
+      dtc-lab: true
+    - name: Jie Xu
+      dtc-lab: true
+    - name: Zihan Wu
+    - name: Cong Wang
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "arXiv preprint"
+  link: "https://arxiv.org/abs/2603.14778"

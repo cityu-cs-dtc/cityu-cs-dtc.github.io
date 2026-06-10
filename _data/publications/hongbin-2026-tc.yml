@@ -1,0 +1,12 @@
+- title: "Optimal fault-tolerant path and cycle embedding of hypercube networks under the PEF model"
+  authors:
+    - name: Hongbin Zhuang
+      dtc-lab: true
+    - name: Wanling Lin
+    - name: Jou-Ming Chang
+    - name: Xiao-Yan Li
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "IEEE Transactions on Computers"
+  link: "https://ieeexplore.ieee.org/abstract/document/11353911"

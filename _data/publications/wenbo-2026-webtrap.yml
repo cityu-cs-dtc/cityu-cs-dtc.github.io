@@ -1,0 +1,13 @@
+- title: "WebTrap: Stealthy Mid-Task Hijacking of Browser Agents During Navigation"
+  authors:
+    - name: Zhichao Liu
+    - name: Wenbo Pan
+      dtc-lab: true
+    - name: Haining Yu
+    - name: Ge Gao
+    - name: Tianqing Zhu
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "arXiv preprint"
+  link: "https://arxiv.org/abs/2605.08310"
