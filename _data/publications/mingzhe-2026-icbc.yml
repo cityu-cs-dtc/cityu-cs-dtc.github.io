@@ -1,7 +1,7 @@
 - title: "GasLiteAA: Optimizing ERC-4337 for Efficient and Secure Gas Sponsorship"
   authors:
-    - name: Hongxu Su
-    - name: Mingzhe Liu
+    - name: Hongxu Su*
+    - name: Mingzhe Liu*
       dtc-lab: true
     - name: Jie Xu
       dtc-lab: true
@@ -10,4 +10,5 @@
     - name: Xuechao Wang
   year: 2026
   journal: "IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2026)"
+  note: "* Equal contribution (co-first authors)"
   link: "https://arxiv.org/abs/2604.10160"
