@@ -88,10 +88,12 @@
 .news-carousel-wrap {
   width: min(980px, calc(100% - 32px));
   margin: 28px auto 0;
+  position: relative;
 }
 
 .newsSwiper {
-  padding: 0 54px 36px;
+  padding: 0 0 36px;
+  overflow: hidden;
 }
 
 .news-card {
@@ -183,6 +185,14 @@
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
+.newsSwiper .swiper-button-prev {
+  left: 12px;
+}
+
+.newsSwiper .swiper-button-next {
+  right: 12px;
+}
+
 .newsSwiper .swiper-button-prev:hover,
 .newsSwiper .swiper-button-next:hover {
   background: #f05f40;
@@ -218,7 +228,7 @@
   }
 
   .newsSwiper {
-    padding: 0 46px 34px;
+    padding: 0 0 34px;
   }
 
   .news-card {
