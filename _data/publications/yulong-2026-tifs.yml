@@ -1,0 +1,13 @@
+- title: "MHcast: Metadata-hiding Multicast with Resilience against Malicious Clients and Servers"
+  authors:
+    - name: Yulong Ming
+      dtc-lab: true
+    - name: Mingyue Wang
+      dtc-lab: true
+    - name: Cong Wang
+    - name: Wei Li
+    - name: Xiaohua Jia
+      dtc-lab: true
+  year: 2026
+  journal: "IEEE Transactions on Information Forensics and Security"
+  link: "https://doi.org/10.1109/TIFS.2026.3711782"

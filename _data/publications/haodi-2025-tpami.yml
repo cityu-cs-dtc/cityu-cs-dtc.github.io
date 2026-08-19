@@ -1,0 +1,10 @@
+- title: "Accelerating Zero-Shot NAS with Feature Map-Based Proxy and Operation Scoring Function"
+  authors:
+    - name: Tangyu Jiang
+    - name: Haodi Wang
+      dtc-lab: true
+    - name: Rongfang Bie
+    - name: C. Yuan
+  year: 2025
+  journal: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  link: "https://ieeexplore.ieee.org/document/11084843"

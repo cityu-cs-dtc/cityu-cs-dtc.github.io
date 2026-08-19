@@ -1,0 +1,11 @@
+- title: "Zero-Knowledge AI Inference with High Precision"
+  authors:
+    - name: Arman Riasi
+    - name: Haodi Wang
+      dtc-lab: true
+    - name: Rouzbeh Behnia
+    - name: Viet Vo
+    - name: Thang Hoang
+  year: 2025
+  journal: "ACM SIGSAC Conference on Computer and Communications Security (CCS 2025)"
+  link: "https://dl.acm.org/doi/10.1145/3719027.3765056"

@@ -1,0 +1,11 @@
+- title: "AutoMixer: Automated Multi-Scale Mixing for Time Series Forecasting Based on Neural Architecture Search"
+  authors:
+    - name: J. Yang
+    - name: Haodi Wang
+      dtc-lab: true
+    - name: Tangyu Jiang
+    - name: M. Zhang
+    - name: Rongfang Bie
+  year: 2026
+  journal: "International Joint Conference on Neural Networks (IJCNN 2026)"
+  link: "https://lirawang.github.io/publications.html"
