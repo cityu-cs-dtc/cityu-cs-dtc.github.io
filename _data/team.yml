@@ -92,7 +92,7 @@
   last_name: Ciyuan
   role:  PhD student
   img: ciyuan.jpg
-  is_alumni: no
+  is_alumni: Yes
   website: https://dblp.org/pid/294/2091.html
   twitter: 
   google_scholar: 
@@ -166,7 +166,7 @@
   last_name: Xiang
   role: PhD student
   img: lixiang.jpg
-  is_alumni:
+  is_alumni: Yes
   website:
   twitter:
   google_scholar:
@@ -178,7 +178,7 @@
   last_name: Shihong
   role: Research Assistant
   img: shihong.jpg
-  is_alumni:
+  is_alumni: Yes
   website:
   twitter:
   google_scholar:
@@ -612,3 +612,39 @@
   github: 
   email: 
   latest: HangsengU
+
+- first_name: Liang
+  last_name: Xiyuan
+  role: PhD student
+  img: xiyuan.jpg
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
+  semantic_scholar:
+  github:
+  email: xyliangsc@gmail.com
+
+- first_name: Yang
+  last_name: Yizheng
+  role: PhD student
+  img: yizheng.jpg
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
+  semantic_scholar:
+  github:
+  email: yizheyang6-c@my.cityu.edu.hk
+
+- first_name: Wang
+  last_name: Danyang
+  role: PhD student
+  img: danyang.jpg
+  is_alumni:
+  website:
+  twitter:
+  google_scholar:
+  semantic_scholar:
+  github:
+  email: dwang337-c@my.cityu.edu.hk
