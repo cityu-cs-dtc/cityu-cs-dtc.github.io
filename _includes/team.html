@@ -77,46 +77,159 @@ hr.primary {
   margin: 0 0 25px 0;
 }
 
-/* ===== Weekly Spreadsheet Button ===== */
+/* ===== Weekly Spreadsheet Banner ===== */
 .spreadsheet-btn-wrapper {
-  margin: 10px 0 35px 0;
+  width: 75%;
+  margin: 8px auto 52px;
 }
 
 .btn-weekly-spreadsheet {
-  display: inline-flex;
+  position: relative;
+  isolation: isolate;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 22px;
-  background: #ffffff;
-  color: #e8420d !important;
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  gap: 20px;
+  min-height: 124px;
+  padding: 24px 28px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fffdfa 0%, #fff7f3 100%);
+  color: #222 !important;
   text-decoration: none !important;
-  border-radius: 6px;
-  border: 1.8px solid #e8420d;
-  box-shadow: none;
-  transition: all 0.2s ease;
+  border: 1px solid rgba(240, 95, 64, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(69, 44, 34, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.btn-weekly-spreadsheet::before {
-  content: "📊";
-  font-size: 1rem;
-  line-height: 1;
+.btn-weekly-spreadsheet::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -58px;
+  top: -76px;
+  width: 205px;
+  height: 205px;
+  border: 34px solid rgba(240, 95, 64, 0.055);
+  border-radius: 50%;
 }
 
 .btn-weekly-spreadsheet:hover {
-  background: #fff0ec;
-  color: #c73209 !important;
-  border-color: #c73209;
-  box-shadow: 0 3px 12px rgba(232, 66, 13, 0.15);
-  transform: translateY(-1px);
+  color: #222 !important;
+  border-color: rgba(240, 95, 64, 0.45);
+  box-shadow: 0 14px 36px rgba(102, 54, 39, 0.13);
+  transform: translateY(-3px);
   text-decoration: none !important;
 }
 
-.btn-weekly-spreadsheet:active {
-  transform: translateY(0px);
-  background: #ffe4dc;
+.btn-weekly-spreadsheet:focus {
+  color: #222 !important;
+  outline: 3px solid rgba(240, 95, 64, 0.2);
+  outline-offset: 3px;
+  text-decoration: none !important;
+}
+
+.spreadsheet-icon {
+  display: inline-flex;
+  flex: 0 0 58px;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  color: #f05f40;
+  font-size: 25px;
+  background: #fff;
+  border: 1px solid rgba(240, 95, 64, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 7px 18px rgba(240, 95, 64, 0.12);
+}
+
+.spreadsheet-copy {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.spreadsheet-eyebrow {
+  margin-bottom: 5px;
+  color: #c84a30;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.spreadsheet-title {
+  color: #26211f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.spreadsheet-description {
+  margin-top: 5px;
+  color: #716965;
+  font-family: 'Merriweather', serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.spreadsheet-action {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 13px;
+  color: #d64c30;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(240, 95, 64, 0.18);
+  border-radius: 999px;
+  transition: gap 0.25s ease, background 0.25s ease;
+}
+
+.btn-weekly-spreadsheet:hover .spreadsheet-action {
+  gap: 13px;
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .spreadsheet-btn-wrapper {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .btn-weekly-spreadsheet {
+    gap: 15px;
+    min-height: 112px;
+    padding: 20px;
+  }
+
+  .spreadsheet-icon {
+    flex-basis: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 21px;
+  }
+
+  .spreadsheet-title {
+    font-size: 19px;
+  }
+
+  .spreadsheet-action {
+    padding: 8px;
+    font-size: 0;
+  }
+
+  .spreadsheet-action i {
+    font-size: 13px;
+  }
 }
 </style>
 
@@ -127,9 +240,17 @@ hr.primary {
     {% assign advisor_roles = "Professor,Assistant Professor,Chair Professor, IEEE Fellow" | split: "," %}
     {% assign research_roles = "Research Assistant Professor,Postdoc" | split: "," %}
 
-    <!-- Weekly Spreadsheet Button -->
+    <!-- Weekly Spreadsheet Banner -->
     <div class="spreadsheet-btn-wrapper">
-      <a href="https://docs.google.com/spreadsheets/d/1M1Y-nP2q-wkbXoUsoKrcZ590tH-3DvtVfKdDhtXrKLs/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-weekly-spreadsheet">Weekly Spreadsheet</a>
+      <a href="https://docs.google.com/spreadsheets/d/1M1Y-nP2q-wkbXoUsoKrcZ590tH-3DvtVfKdDhtXrKLs/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-weekly-spreadsheet" aria-label="Open the weekly spreadsheet in a new tab">
+        <span class="spreadsheet-icon" aria-hidden="true"><i class="fa fa-table"></i></span>
+        <span class="spreadsheet-copy">
+          <span class="spreadsheet-eyebrow">Lab planning</span>
+          <span class="spreadsheet-title">Weekly Spreadsheet</span>
+          <span class="spreadsheet-description">View our shared weekly schedule and updates.</span>
+        </span>
+        <span class="spreadsheet-action">Open sheet <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+      </a>
     </div>
 
     <!-- Advisors -->
